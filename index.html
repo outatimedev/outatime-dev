@@ -5,15 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Outatime Dev</title>
     <style>
+      @font-face {
+        font-family: "bttf";
+        src: url("fonts/bttf.ttf");
+      }
+      :root {
+        --color-engineering-international-orange: #b50d13;
+        --color-flame: #d85116;
+        --color-princeton-orange: #e4801d;
+        --color-miragold: #f0a81a;
+        --color-metallic-yellow: #f7dc11;
+        --color-ball-blue: #2d9cce;
+      }
       body {
+        background-color: black;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 3rem;
+        font-family: "bttf";
+        text-transform: uppercase;
+        margin-bottom: 0;
+        background: linear-gradient(
+          var(--color-engineering-international-orange) 0%,
+          var(--color-princeton-orange) 50%,
+          var(--color-metallic-yellow) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px silver;
+      }
+      a {
+        all: unset;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+      h2 {
+        color: white;
+        margin: 8px;
+        padding: 0;
+        font-weight: 200;
       }
     </style>
   </head>
   <body>
-    <h1><pre>Outatime Dev</pre></h1>
+    <h1><a href="https://twitter.com/outatimedev">Outatime Dev &#60;</a></h1>
+    <h2><pre>Coding at 88mph</pre></h2>
   </body>
 </html>
